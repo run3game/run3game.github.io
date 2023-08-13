@@ -5,11 +5,12 @@
 	<!-- Start Meta -->
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description" content="Run 3: Unblocked school game, ad-free and free to play. Navigate through space tunnels, conquer challenges. Endless fun for students!" />
-
+	<meta name="description" content="Beorx - Creative Agency HTML5 Template" />
+	<meta name="keywords" content="Creative, Digital, multipage, landing, freelancer template" />
+	<meta name="author" content="ThemeOri">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Title of Site -->
-	<title>Run 3</title>
+	<title>Play run 3 - run3game.github.io</title>
 	<meta name="robots" content="noindex,nofollow" />
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -24,6 +25,7 @@
 	<!-- Magnific -->
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<!-- Nice Select -->
+	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<!-- Mean menu -->
 	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
 	<!-- Flaticon -->
@@ -70,35 +72,33 @@
 
 
 
-	<!-- About Area Start -->
-	<div class="about__area section-padding thin-bg pb-0">
-		<div class="container">
-			<div class="row a-border">
-				<div class="col-xl-6 col-lg-6 lg-mb-30">
-					<div class="about__area-left wow fadeInUp" data-wow-delay="0.4s">
-						<div class="about__area-left-title">	<span class="section-top">Game for School</span>
-							<h2 class="mb-20">Play Run 3 Unblocked</h2>	
-							<p>Run 3: Unblocked school game, ad-free and free to play. Navigate through space tunnels, conquer challenges. Endless fun for students!.</p>
-						</div>
-						<div style="padding-top: 20px;">
-							<button  class="theme-btn" onclick="openFullscreen();">PLAY NOW</button>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-6 col-lg-6">
-					<div class="about__area-right t-right wow fadeInUp" data-wow-delay="0.8s">
-						<div class="about__area-right-image">
-							<img src="assets/img/about.jpg" alt="">
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- About Area End -->
 
 
+<!-- iframe Game -->
+<div class="container" style="padding-top:15px; padding-bottom:20px" align="Center">
+  <iframe class="gm-iframe" id="gm-area" src="https://bonbang.github.io/store99/run-3" width="840" height="560" scrolling="none" frameborder="0" allowfullscreen></iframe>
+   <div class="container" align="Center"> 
+      <button  class="theme-btn" onclick="openFullscreen();">FullScreen</button>
+
+
+   </div>
+
+<script>
+var elem = document.getElementById("gm-area");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+
+
+</div>
+<!-- End iframe Game -->
 
 
 
@@ -604,7 +604,7 @@
 	<!-- Mean menu -->
 	<script src="assets/js/jquery.meanmenu.min.js"></script>
 	<!-- Nice Select -->
-
+	<script src="assets/js/jquery.nice-select.min.js"></script>
 	<!-- WOW JS -->
 	<script src="assets/js/wow.min.js"></script>
 	<!-- Custom JS -->
